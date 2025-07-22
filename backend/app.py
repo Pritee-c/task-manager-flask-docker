@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Database configuration - use environment variables for Docker
-DATABASE_URL = os.getenv('DATABASE_URL', 'postgresql://postgres:root@localhost:5432/taskdb')
+DATABASE_URL = os.getenv('DATABASE_URL', 'postgresql://postgres:password@localhost:5432/taskdb')
 app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
