@@ -1,4 +1,5 @@
-const API_URL = 'http://localhost:5000/tasks';
+// Use relative URL for API calls when running in Docker
+const API_URL = '/api/tasks';
 
 async function fetchTasks() {
     const res = await fetch(API_URL);

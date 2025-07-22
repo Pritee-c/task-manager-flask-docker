@@ -152,3 +152,14 @@ Thumbs.db
 # Local configuration files
 config.local.py
 .env.local
+.env
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# SSL certificates
+ssl/
+*.pem
+*.crt
+*.key

@@ -24,7 +24,49 @@ A full-stack task management application built with Flask (Python) backend and v
     └── styles.css        # CSS styling
 ```
 
-## Backend (Flask API)
+## Quick Start with Docker
+
+### Prerequisites
+- Docker and Docker Compose installed
+- Git (for cloning the repository)
+
+### Local Development
+```bash
+# Clone the repository
+git clone https://github.com/Pritee-c/task-manager-flask-docker.git
+cd task-manager-flask-docker
+
+# Start all services
+docker-compose up -d
+
+# View logs
+docker-compose logs -f
+
+# Stop all services
+docker-compose down
+```
+
+The application will be available at:
+- Frontend: http://localhost
+- Backend API: http://localhost:5000
+
+### Production Deployment on EC2
+
+1. **Launch an EC2 instance** (Ubuntu 20.04+ recommended)
+2. **Configure Security Groups** to allow:
+   - SSH (port 22) from your IP
+   - HTTP (port 80) from anywhere
+   - HTTPS (port 443) from anywhere
+3. **Run the deployment script**:
+   ```bash
+   wget https://raw.githubusercontent.com/Pritee-c/task-manager-flask-docker/main/deploy-ec2.sh
+   chmod +x deploy-ec2.sh
+   ./deploy-ec2.sh
+   ```
+
+## Manual Setup (Alternative to Docker)
+
+### Backend (Flask API)
 
 ### Prerequisites
 
