@@ -164,10 +164,6 @@ The frontend is a simple single-page application using vanilla JavaScript, HTML,
 4. Push to the branch (`git push origin feature/new-feature`)
 5. Create a Pull Request
 
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## Contact
 
 For questions or suggestions, please open an issue in the GitHub repository.
