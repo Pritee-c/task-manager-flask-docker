@@ -104,8 +104,4 @@ curl http://localhost/api/tasks
 # If you get "permission denied" errors with Docker
 sudo usermod -aG docker $USER
 newgrp docker
-
-# Or logout and SSH back in
-exit
-ssh -i your-key.pem ubuntu@your-ec2-ip
 ```
